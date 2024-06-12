@@ -1,9 +1,10 @@
 import "./index.css";
+import Greet from "./components/Greet";
 
 function App() {
   return (
     <>
-      <h1 className="text-red-600 text-4xl p-4">App</h1>
+      <Greet name="Bobby" />
     </>
   );
 }
