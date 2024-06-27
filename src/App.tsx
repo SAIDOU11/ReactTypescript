@@ -4,7 +4,7 @@ import Greet from "./components/Greet";
 function App() {
   return (
     <>
-      <Greet name="Bobby" />
+      <Greet name="Bob" />
     </>
   );
 }
