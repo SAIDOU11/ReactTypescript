@@ -1,9 +1,33 @@
 import "./index.css";
+import Greet from "./components/Greet";
+import Person from "./components/Person";
+import PersonList from "./components/PersonList";
 
 function App() {
+  const fullName = {
+    firstName: "Marty",
+    lastName: "Byrde",
+  };
+
+  const nameList = [
+    {
+      firstName: "Walter",
+      lastName: "White",
+    },
+    {
+      firstName: "Saul",
+      lastName: "Goodman",
+    },
+    {
+      firstName: "Gustavo",
+      lastName: "Fring",
+    },
+  ];
   return (
     <>
-      <h1 className="text-4xl text-blue-800 m-4">Welcome Back</h1>
+      <Greet name="Bobby" isLoggedIn={true} />
+      <Person name={fullName} />
+      <PersonList names={nameList} />
     </>
   );
 }
