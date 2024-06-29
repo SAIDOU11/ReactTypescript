@@ -7,12 +7,12 @@ import Greet from "./components/Greet";
 function App() {
   return (
     <>
-      <Status status="success" />
+      <Status status="loading" />
       <Heading>Placeholder text</Heading>
       <Oscar>
-        <Heading>The Oscar goes to Leonardo DiCaprio!</Heading>
+        <Heading>The Oscar goes to Bob Odenkirk in Better Caul Saul!</Heading>
       </Oscar>
-      <Greet name="Saidou" isLoggedIn={true} />
+      <Greet name="Bob" isLoggedIn={true} />
     </>
   );
 }
