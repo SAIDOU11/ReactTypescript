@@ -8,12 +8,14 @@ const Input = (props: InputProps) => {
     console.log(event);
   };
   return (
-    <input
-      className=" border-2 border-black m-4"
-      type="text"
-      value={props.value}
-      onChange={handleInputChange}
-    />
+    <div>
+      <input
+        className="border-2 border-black m-4 p-2"
+        type="text"
+        value={props.value}
+        onChange={handleInputChange}
+      />
+    </div>
   );
 };
 

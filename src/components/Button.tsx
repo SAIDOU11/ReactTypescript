@@ -4,14 +4,12 @@ type ButtonProps = {
 
 const Button = (props: ButtonProps) => {
   return (
-    <div>
-      <button
-        className="m-4 py-2 px-4 bg-blue-400 rounded-md text-xl"
-        onClick={(event) => props.handleClick(event, 1)}
-      >
-        Click
-      </button>
-    </div>
+    <button
+      onClick={(event) => props.handleClick(event, 10)}
+      className="m-4 p-4 text-xl bg-blue-200"
+    >
+      Click
+    </button>
   );
 };
 

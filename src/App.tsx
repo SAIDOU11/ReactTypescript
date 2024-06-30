@@ -5,11 +5,7 @@ import Input from "./components/Input";
 function App() {
   return (
     <>
-      <Button
-        handleClick={(event, id) => {
-          console.log("Button clicked", event, id);
-        }}
-      />
+      <Button handleClick={(event, id) => console.log(event, id)} />
       <Input value="" handleChange={(event) => console.log(event)} />
     </>
   );
