@@ -8,7 +8,7 @@ const Greet = (props: GreetProps) => {
   const { messageCount = 0 } = props;
   return (
     <div>
-      <h2 className="text-xl  text-red-600">
+      <h2 className="text-2xl text-center text-red-600 m-4">
         {props.isLoggedIn
           ? `Welcome back ${props.name} you have ${messageCount} unread messages.`
           : `Welcome Guest`}

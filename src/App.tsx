@@ -1,10 +1,10 @@
-import User from "./components/state/User";
+import Greet from "./components/Greet";
 import "./index.css";
 
 function App() {
   return (
     <>
-      <User />
+      <Greet name="Saidou" isLoggedIn={true} />
     </>
   );
 }
