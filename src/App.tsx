@@ -1,10 +1,10 @@
-import "./index.css";
 import Container from "./components/Container";
+import "./index.css";
 
 function App() {
   return (
     <>
-      <Container styles={{ border: "1px solid black", padding: "1rem" }} />
+      <Container styles={{ border: "2px solid blue", padding: "1em" }} />
     </>
   );
 }

@@ -4,8 +4,5 @@ export type Name = {
 };
 
 export type PersonProps = {
-  name: {
-    firstName: string;
-    lastName: string;
-  };
+  name: Name;
 };

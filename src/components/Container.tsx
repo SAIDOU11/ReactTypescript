@@ -3,7 +3,7 @@ type ContainerProps = {
 };
 
 const Container = (props: ContainerProps) => {
-  return <div style={props.styles}>Text content goes here</div>;
+  return <div style={props.styles}>Text goes here</div>;
 };
 
 export default Container;
