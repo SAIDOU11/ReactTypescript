@@ -1,10 +1,12 @@
 import "./index.css";
-import Greet from "./components/Greet";
+import LoggedIn from "./components/state/LoggedIn";
+import User from "./components/state/User";
 
 function App() {
   return (
     <>
-      <Greet name="Saidou" isLoggedIn={true} />
+      <LoggedIn />
+      <User />
     </>
   );
 }
