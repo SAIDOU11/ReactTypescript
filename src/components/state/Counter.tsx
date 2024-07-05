@@ -33,26 +33,40 @@ function reducer(state: CounterState, action: CounterAction) {
 const Counter = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   return (
-    <div className="m-4">
-      Count : {state.count}
+    <div className="text-center mt-8">
+      <p className="font-bold text-xl ">Count : {state.count} </p>
       <div>
         <button
-          onClick={() => dispatch({ type: "increment", payload: 10 })}
-          className="py-2 px-3 bg-blue-600 text-white m-4 rounded-md"
+          onClick={() =>
+            dispatch({
+              type: "decrement",
+              payload: 10,
+            })
+          }
+          className="py-2 px-3 m-4 rounded-md  bg-red-600 text-white"
         >
-          Increment 10
+          Decrement
         </button>
         <button
-          onClick={() => dispatch({ type: "decrement", payload: 10 })}
-          className="py-2 px-3 bg-blue-600 text-white m-4 rounded-md"
+          onClick={() =>
+            dispatch({
+              type: "increment",
+              payload: 10,
+            })
+          }
+          className="py-2 px-3 m-4 rounded-md  bg-green-600 text-white"
         >
-          Decrement 10
+          Increment
         </button>
       </div>
       <div>
         <button
-          onClick={() => dispatch({ type: "reset" })}
-          className="rounded-md bg-red-800 text-white py-2 px-3 m-4"
+          onClick={() =>
+            dispatch({
+              type: "reset",
+            })
+          }
+          className="py-2 px-4 m-4 rounded-md   bg-black text-white"
         >
           Reset
         </button>
