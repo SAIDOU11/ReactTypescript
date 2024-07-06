@@ -1,11 +1,14 @@
 import "./index.css";
 
-import Counter from "./components/state/Counter";
+import { UserContextProvider } from "./components/context/UserContext";
+import User from "./components/context/User";
 
 function App() {
   return (
     <>
-      <Counter />
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
     </>
   );
 }
