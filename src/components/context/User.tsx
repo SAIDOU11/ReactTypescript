@@ -1,32 +1,28 @@
 import { useContext } from "react";
 import { UserContext } from "./UserContext";
 
-export const User = () => {
+const User = () => {
   const userContext = useContext(UserContext);
   const handleLogin = () => {
-    if (userContext) {
-      userContext.setUser({
-        name: "Saidou",
-        email: "saidou@saidou.com",
-      });
-    }
+    userContext.setUser({
+      name: "Salif",
+      email: "salif@example.com",
+    });
   };
   const handleLogout = () => {
-    if (userContext) {
-      userContext.setUser(null);
-    }
+    userContext.setUser(null);
   };
   return (
-    <div>
+    <div className="m-4">
       <button
         onClick={handleLogin}
-        className="bg-red-600 text-white py-2 px-3 m-4"
+        className="py-2 px-3 bg-blue-800 text-white m-4"
       >
         Login
       </button>
       <button
         onClick={handleLogout}
-        className="bg-blue-800 text-white py-2 px-3 m-4"
+        className="py-2 px-3 bg-red-800 text-white m-4"
       >
         Logout
       </button>
