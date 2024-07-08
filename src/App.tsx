@@ -1,10 +1,11 @@
+import Private from "./components/auth/Private";
+import Profile from "./components/auth/Profile";
 import "./index.css";
-import DomRef from "./components/ref/DomRef";
 
 function App() {
   return (
     <>
-      <DomRef />
+      <Private isLoggedIn={true} component={Profile} />
     </>
   );
 }
