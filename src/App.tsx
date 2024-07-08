@@ -1,11 +1,10 @@
-import Private from "./components/auth/Private";
-import Profile from "./components/auth/Profile";
+import Toast from "./components/templateliterals/Toast";
 import "./index.css";
 
 function App() {
   return (
     <>
-      <Private isLoggedIn={true} component={Profile} />
+      <Toast position="center" />
     </>
   );
 }
